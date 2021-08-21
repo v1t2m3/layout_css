@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1#0">
+    <title>Document</title>
+    
+    <style>
+    *{ 
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+    }
+    body > div{
+        padding:15px;
+        text-align: center;
+    }
+    #header{
+        width:100%;
+        height:100px;
+        background-color: aqua;
+        line-height: 100px;
+    }
+    #logo{
+        width:25%;
+        height:100px;
+        background-color: antiquewhite;
+        float:left;
+    }
+    #banner{
+        width:75%;
+        height:100px;
+        background-color:burlywood;
+        float:left;
+    }
+    #sidebar{
+        width:100%;
+        height:40px;
+        background-color:blue;
+        position:relative;
+
+    }
+    #sidebar ul{
+        
+        list-style-type: none;
+    }
+    #sidebar ul li{
+        padding:5px 10px;
+        float:left;
+        border:2px solid ;
+        border-color: transparent #fff transparent transparent;
+        
+    }
+    #sidebar a{
+        color:#fff;
+        text-decoration:none;
+        float:left;
+    }
+    #sidebar input{
+        margin:5px;
+        padding-left:8px;
+        position:absolute;
+        right:20px;
+        border-radius: 10px;
+        
+    }
+    #main{
+        position: relative;
+        width:100%;
+        height:800px;
+        /* clear: both; */
+        box-sizing: border-box;
+    }
+    #main_left{
+        width:20%;
+        height:800px;
+        float:left;
+        position: relative;
+        padding-right:10px;
+        box-sizing: border-box;
+    }
+    #main_right{
+        width:20%;
+        height:800px;
+        background-color:rgb(105, 71, 47);
+        float:right;
+        padding:10px;
+        box-sizing: border-box;
+    }
+    
+    .main_left_div1{
+        position:absolute;
+        top:0;
+        width:100%;
+        height:350px;
+        line-height: 350px;
+        background-color: rgb(146, 98, 39);
+        margin-bottom:10px;
+    }
+    .main_left_div2{
+        position:absolute;
+        top:360px;
+        width:100%;
+        height:440px;
+        line-height: 440px;
+        background-color: bisque;
+    }
+    #main_main{
+        width:60%;
+        height:800px;
+        float:left;
+        position: relative;
+        padding-right:10px;
+        box-sizing: border-box;
+    }
+    .main_main_div1{
+        position:absolute;
+        width:100%;
+        height:290px;
+        margin-bottom:10px;
+        box-sizing: border-box;
+    }
+    .main_main_div1_child1{
+        position:absolute;
+        width:48%;
+        height:100%;line-height: 290px;
+        left:0;
+        margin-right:10px;
+        background-color: rgb(10, 122, 70);
+        box-sizing: border-box;
+
+    }
+    .main_main_div1_child2{
+        position:absolute;
+        width:50%;
+        height:100%;line-height: 290px;
+        right:0;
+        background-color: rgb(128, 148, 139);
+        box-sizing: border-box;
+
+    }
+    .main_main_div2{
+        position:absolute;
+        clear:both;
+        top:300px;
+        width:100%;
+        height:500px;
+        background-color: antiquewhite;
+box-sizing: border-box;
+    }
+    .main_main_div2_child1{
+        display: flex;
+        position:absolute;
+        width:33%;
+        height:100%;line-height: 290px;
+        margin-right:10px;
+        left:0;
+        background-color: rgb(99, 6, 76);
+        box-sizing: border-box;
+
+    }
+    .main_main_div2_child2{
+        position:absolute;
+        width:33%;
+        height:100%;line-height: 290px;
+        margin-right:10px;
+        left:33.5%;
+        background-color: rgb(148, 48, 123);
+        box-sizing: border-box;
+
+    }
+    .main_main_div2_child3{
+        position:absolute;
+        width:33%;
+        height:100%;line-height: 290px;
+        right:0;
+        background-color: rgb(138, 79, 123);
+        box-sizing: border-box;
+
+    }
+    
+    #footer{
+        width:100%;
+        height:100px;
+        background-color:blueviolet;
+    }
+    </style>
+</head>
+<body>
+<div id="header">
+    <div id="logo">logo</div>
+    <div id="banner">banner</div>
+</div>
+<div id="sidebar">
+   <div id='list'>
+        <ul>
+           <li><a href='#'>Home</a></li>
+           <li><a href='#'>Student</a></li>
+           <li><a href='#'>Courses</a></li>
+           <li><a href='#'>About Us</a></li>
+           <li><a href='#'>Contact Us</a></li>
+        </ul>
+   </div>
+   <div id='input'>
+       <input type='text' name='search' placeholder="Search">
+   </div>
+</div>
+<div id="main">
+    <div id="main_left">
+        <div class='main_left_div1'>main_left_div1</div>
+        <div class='main_left_div2'>main_left_div2</div>
+    </div>
+    <div id="main_main">
+        <div class='main_main_div1'>
+            <div class='main_main_div1_child1'>main_main_div1_child1</div>
+            <div class='main_main_div1_child2'>main_main_div1_child2</div>
+        </div>
+        <div class='main_main_div2'>
+            <div class='main_main_div2_child1'>main_main_div2_child1</div>
+            <div class='main_main_div2_child2'>main_main_div2_child2</div>
+            <div class='main_main_div2_child3'>main_main_div2_child3</div>
+        </div>
+    </div>
+    <div id="main_right">
+        <div class='main_right_div3_child1'>main_right_div3_child1</div>
+        <div class='main_right_div3_child2'>main_right_div3_child2</div>
+        <div class='main_right_div3_child3'>main_right_div3_child3</div>
+    </div>
+</div>
+<div id="footer"></div>
+</body>
+</html>
